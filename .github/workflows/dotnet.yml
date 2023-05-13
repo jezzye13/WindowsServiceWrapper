@@ -13,4 +13,4 @@ jobs:
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1
     - name: Build
-      run: msbuild WindowsServiceWrapper.sln -p:Configuration=Release
+      run: msbuild WindowsServiceWrapper.csproj -p:Configuration=Release
