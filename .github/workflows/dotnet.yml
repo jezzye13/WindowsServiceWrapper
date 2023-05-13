@@ -3,8 +3,6 @@ name: Release
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -12,12 +10,7 @@ jobs:
     runs-on: windows-2019
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 4.7.2
     - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v1.0.2
+      uses: microsoft/setup-msbuild@v1
     - name: Build
-      run: msbuild WindowsServiceWrapper/WindowsServiceWrapper.csproj /p:Configuration=Release
+      run: msbuild WindowsServiceWrapper/WindowsServiceWrapper.sln -p:Configuration=Release
