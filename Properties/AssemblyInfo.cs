@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("WisdomUnit")]
 [assembly: AssemblyProduct("WindowsServiceWrapper")]
-[assembly: AssemblyCopyright("Copyright © WisdomUnit 2022")]
+[assembly: AssemblyCopyright("Unlicense")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
